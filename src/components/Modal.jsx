@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Modal = ({onClose,isOpen}) => {
+const Modal = ({onClose,isOpen,Children}) => {
   return (
-    <div>modal</div>
+    <>
+    {isOpen && <div className=''>Modal</div>}
+    </>
   )
 }
 
