@@ -11,6 +11,7 @@ const Modal = ({onClose,isOpen,Children}) => {
         <div className='flex justify-end'>
             <MdOutlineClose onClick={onClose} className='text-2xl self-end'/>
         </div>
+        {Children}
     </div>
     <div onClick={onClose} className='backdrop-blur h-screen w-screen z-40 absolute top-0'/>
     </>
