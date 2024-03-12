@@ -5,7 +5,8 @@ import { Field, Form, Formik } from 'formik';
 const AddAndUpdateContact = ({isOpen,onClose}) => {
   return (
     <div>
-    <Modal isOpen={isOpen} onClose={onClose}>       
+    <Modal isOpen={isOpen} onClose={onClose}>  
+    modal     
         <Formik>
             <Form>
                 <div className='flex flex-col gap-1'>
@@ -17,7 +18,7 @@ const AddAndUpdateContact = ({isOpen,onClose}) => {
         </Formik>
   </Modal>
   </div>
-  );
+  );    
 };
 
 export default AddAndUpdateContact; 
